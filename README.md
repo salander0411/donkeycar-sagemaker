@@ -53,8 +53,7 @@ configuring our donkeycar and training our model.
 
 ## Configuring your Donkeycar
 
-You will need to calibrate your car by following the instructions described in [Calibrate your
-car](http://docs.donkeycar.com/guide/calibrate/).
+You will need to calibrate your car first by running the command  ``donkey createcar mycar``.  
 
 ### Connecting your donkeycar to AWS IoT
 
@@ -108,13 +107,15 @@ to make sure the tape is easily distinguishable from the floor.
 
 Make sure you collect good data.
 
-1. Practice driving around the track a couple times without recording data.
-2. When you're confident you can drive 10 laps without mistake press Start Recording
+1. Practice driving around the track a couple times. You could easily run the car by running ```python manage.py drive```.
+2. When you're confident you can drive 10 laps without mistake, delete the previous unuseful data in S3 (**EXCEPT meta.json**) and restart driving and producing new data.
 3. If you crash or run off the track press Stop Car immediately to stop recording. A little bad data 
 won't affect your autopilot.
 4. After you've collected 10-20 laps of good data (5-20k images) you can stop your car with Ctrl-c in
 the ssh session for your car.
 5. The data you've collected is sent to AWS and stored in your Amazon S3 bucket.
+
+
 
 ## Training the model with Amazon SageMaker
 
