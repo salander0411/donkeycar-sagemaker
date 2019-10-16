@@ -24,6 +24,8 @@ donkeycar](http://docs.donkeycar.com/), with one exception that you use the repo
 https://github.com/chankh/donkey instead.
 
 ```
+$ cd ~
+$ mkdir trendmicro
 $ git clone https://github.com/chankh/donkey donkeycar 
 $ pip install -e donkeycar
 ```
