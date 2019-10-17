@@ -61,7 +61,7 @@ calibrate your car first by running the command
 ```
 $ cd ~/trendmicro/
 $ donkey createcar mycar
-```.  
+```
 
 If you run the error of no available package for AWS IOT Package, please install it by running ```pip install xxx```
 
