@@ -91,8 +91,8 @@ you. Click the checkbox and then click **Done**.
 
 <img src="images/iot-policy.png">
 
-You have now completed the setup on AWS, next you need to copy the certificates that you have
-downloaded to your donkeycar and update the _config.py_ file with the appropriate values.
+You have now completed the setup on AWS, next you need to **copy the certificates that you have
+downloaded to your donkeycar**  by repeatly running ``scp <your-file-path>/<your-pem-or-key-name> pi@192.168.1.16x:~/trendmicro/mycar/<replace-with-your-file-name>``  (3 files in total including one [root CA](https://www.amazontrust.com/repository/AmazonRootCA1.pem) )  and update the _config.py_ file with the appropriate values.
 
 ```
 #AWS IOT
@@ -119,8 +119,8 @@ Make sure you collect good data.
 
 1. Practice driving around the track a couple times. You could easily run the car by running 
 ```
-$cd /home/pi/trendmicro/mycar
-$python manage.py drive
+$ cd /home/pi/trendmicro/mycar
+$ python manage.py drive
 ```
 2. When you're confident you can drive 10 laps without mistake, delete the previous unuseful data in S3 (**EXCEPT meta.json**) and restart driving and producing new data.
 3. If you crash or run off the track press Stop Car immediately to stop recording. A little bad data 
