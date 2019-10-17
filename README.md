@@ -56,7 +56,14 @@ configuring our donkeycar and training our model.
 
 ## Configuring your Donkeycar
 
-You will need to calibrate your car first by running the command  ``donkey createcar mycar``.  If you run the error of no available package for AWS IOT Package, please install it by running ```pip install xxx```
+### Create the car
+calibrate your car first by running the command  
+```
+$ cd ~/trendmicro/
+$ donkey createcar mycar
+```.  
+
+If you run the error of no available package for AWS IOT Package, please install it by running ```pip install xxx```
 
 ### Connecting your donkeycar to AWS IoT
 
