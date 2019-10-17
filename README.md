@@ -26,6 +26,7 @@ https://github.com/chankh/donkey instead.
 ```
 $ cd ~
 $ mkdir trendmicro
+$ cd trendmicro
 $ git clone https://github.com/chankh/donkey donkeycar 
 $ pip install -e donkeycar
 ```
