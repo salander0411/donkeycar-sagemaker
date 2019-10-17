@@ -109,7 +109,11 @@ to make sure the tape is easily distinguishable from the floor.
 
 Make sure you collect good data.
 
-1. Practice driving around the track a couple times. You could easily run the car by running ```python manage.py drive```.
+1. Practice driving around the track a couple times. You could easily run the car by running 
+```
+$cd /home/pi/trendmicro/mycar
+$python manage.py drive
+```
 2. When you're confident you can drive 10 laps without mistake, delete the previous unuseful data in S3 (**EXCEPT meta.json**) and restart driving and producing new data.
 3. If you crash or run off the track press Stop Car immediately to stop recording. A little bad data 
 won't affect your autopilot.
@@ -158,6 +162,7 @@ $ tar -zxf model.tar.gz
 Run your autonomous vehicle using the downloaded model.
 
 ```
+$ cd /home/pi/trendmicro/mycar
 $ python manage.py drive --model donkeycar
 ```
 
