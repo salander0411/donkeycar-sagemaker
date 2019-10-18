@@ -25,6 +25,7 @@ https://github.com/chankh/donkey instead.
 
 ```
 $ cd ~
+$ rm -rf trendmicro/
 $ mkdir trendmicro
 $ cd trendmicro
 $ git clone https://github.com/chankh/donkey donkeycar 
